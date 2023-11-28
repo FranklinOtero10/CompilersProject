@@ -29,8 +29,7 @@ comment2	("/*")({esp})((.)|({esp}))*("*/")
 "switch"	{return SWITCH;}
 "case"		{entrarBloque(); return CASE;}
 "break"		{return BREAK;}
-"default"	{return DEFAULT;}
-":"			{return DOSPUNTOS;} 		 
+"default"	{return DEFAULT;} 		 
 "parseInt"	{return PARSEINT;}
 ".toString()"	{return TOSTRING;}	
 {comment1}	;
@@ -41,6 +40,8 @@ comment2	("/*")({esp})((.)|({esp}))*("*/")
 \"			{return COMILLA;}
 \;			{return PUNCOMA;}
 \t			{return TAB;}
+"{"			{entrarBloque(); return LLAVEAPER;}
+"}"			{salirBloque();return LLAVECIE;}
 "and"		{return AND;}
 "or"		{return OR;}
 "<="		{return MENOR_IGUAL;}
