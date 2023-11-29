@@ -14,7 +14,6 @@ print		("print")
 comment1	("//")((.)*)([\n])
 comment2	("/*")({esp})((.)|({esp}))*("*/")
 
-
 %%+
 {print}		{return PRINT;}
 "int"		{return INTEGER;}

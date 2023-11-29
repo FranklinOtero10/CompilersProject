@@ -1,4 +1,4 @@
 {
     int num = 5;
-    string c = "ho";
+    string c = "hola mundo";
 }
