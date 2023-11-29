@@ -38,7 +38,7 @@ simbolo *t = NULL;
 
 %left '+' '-'
 %left '*' '/'
-
+ 
 %%
 programa:
 		LLAVEAPER					
