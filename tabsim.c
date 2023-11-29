@@ -1,4 +1,6 @@
  #include "tabsim.h"
+ int level = 0;
+ int errores = 0;
 
  simbolo * crear() {
 	return NULL;

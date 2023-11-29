@@ -3,9 +3,6 @@
 #include <string.h>
 #include <stdbool.h>
 
-int level;
-int errores;
-
 typedef struct _simbolo { 
 	struct _simbolo * sig;
 	char nombre [20];
@@ -36,3 +33,5 @@ typedef struct {
  void entrarBloque();
  void salirBloque();
  void imprimir(simbolo * );
+extern int level;
+extern int errores;
